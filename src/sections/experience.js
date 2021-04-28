@@ -233,9 +233,9 @@ const Exp = () => {
                     <br></br>
                     <CustomSpan> BOOTFINANCE</CustomSpan>{" "}
                      <CustomSpan> </CustomSpan> <br></br>{" "}
-                    <CustomSpan> MISSION</CustomSpan> : Fullstack Engineer ( liquidity pool implementation {"&"} integration )
+                    <CustomSpan> MISSION</CustomSpan> : FULLSTACK ENGINEER ( LIQUIDITY POOL implementation {"&"} integration )
                     <br></br>
-                    <CustomSpan> MARCH-- 2021</CustomSpan>
+                    <CustomSpan> FEBRURY-- 2021</CustomSpan>
                   </td>
                 </StyledHeader>
               </tr>
