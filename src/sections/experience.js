@@ -4,11 +4,11 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { animated, useSpring, config } from "react-spring";
 import K2lis from "../static/k2lis.png";
-import tt from "../static/tt.png";
+import tt from "../static/telecom.png";
 import ScrollLink from "../components/utils/scrollLink";
 import Heading from "../components/UI/heading";
-import Laevitas from "../images/circle-cropped (1).png"
-import bootfinance from "../images/circle-cropped (2).png"
+import Laevitas from "../static/laevitas.png"
+import bootfinance from "../static/boot.png"
 
 import {
   Contained,
@@ -235,7 +235,7 @@ const Exp = () => {
                      <CustomSpan> </CustomSpan> <br></br>{" "}
                     <CustomSpan> MISSION</CustomSpan> : FULLSTACK ENGINEER ( LIQUIDITY POOL implementation {"&"} integration )
                     <br></br>
-                    <CustomSpan> FEBRURY-- 2021</CustomSpan>
+                    <CustomSpan> FEBRURY 2021</CustomSpan>
                   </td>
                 </StyledHeader>
               </tr>

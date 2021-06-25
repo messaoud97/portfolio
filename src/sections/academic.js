@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { animated, useSpring, config } from 'react-spring';
 import Isamm from '../static/isamm.png';
-import Enicar from '../static/Enicarthage.png';
+import Enicar from '../static/enicar.png';
 import ScrollLink from '../components/utils/scrollLink';
 import Heading from '../components/UI/heading';
 import {
