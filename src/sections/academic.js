@@ -1,8 +1,7 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { animated, useSpring, config } from 'react-spring';
+import { animated } from 'react-spring';
 import Isamm from '../static/isamm.png';
 import Enicar from '../static/enicar.png';
 import ScrollLink from '../components/utils/scrollLink';
@@ -12,7 +11,7 @@ import {
   StyledSection,
   Wrapper,
 } from '../components/layout/elements';
- const StyledHeader = styled(animated.header)`
+const StyledHeader = styled(animated.header)`
    width: auto;
   
   background: var(--navbar);
@@ -26,10 +25,7 @@ import {
   @media ${props => props.theme.mediaQueries.small} {
     width: auto;
  
-  }
-
- 
- `;
+  }`;
 const StyledLink = styled.a`
   text-decoration: none;
   border-radius: 50%;
@@ -151,42 +147,6 @@ const CustomSpan = styled.span`
   }
 `;
 
-
-const StackTitle = styled.h2`
-  font-weight: 600;
-  color: var(--text-highlight);
-  margin-top: 5rem;
-  font-size: 2rem;
-  transition: color 0.2s ease-out;
-
-  @media ${props => props.theme.mediaQueries.small} {
-    font-size: 1.9rem;
-  }
-
-  @media ${props => props.theme.mediaQueries.smallest} {
-    font-size: 1.8rem;
-  }
-`;
-
-const Stack = styled.p`
-  color: var(--primary);
-  width: 75%;
-  margin: 0 auto;
-  text-transform: uppercase;
-  margin-bottom: 5rem;
-  font-size: 1.4rem;
-  line-height: 1.8;
-  font-weight: 700;
-
-  @media ${props => props.theme.mediaQueries.small} {
-    width: 90%;
-    font-size: 1.3rem;
-  }
-
-  @media ${props => props.theme.mediaQueries.smallest} {
-    font-size: 1.2rem;
-  }
-`;
 const CustomSpan1 = styled.div`
 position: relative;
 font-style: italic;
@@ -209,28 +169,6 @@ white-space: normal;
 }
 `;
 
-const StyledIcon = styled(FontAwesomeIcon)`
-  color: inherit;
-  margin-right: 0.5rem;
-`;
-
-const ButtonsWrapper = styled.div`
-  display: flex;
-
-  & a:first-of-type {
-    margin-right: 3rem;
-  }
-
-  @media ${props => props.theme.mediaQueries.medium} {
-    justify-content: space-around;
-    width: 100%;
-
-    & a:first-of-type {
-      margin-right: 0rem;
-    }
-  }
-`;
-
 // Takes custom components from markdown, and maps to my custom components
 const renderCustom = new rehypeReact({
   createElement: React.createElement,
@@ -238,68 +176,49 @@ const renderCustom = new rehypeReact({
 }).Compiler;
 
 const Exp = () => {
-  
+
   return (
     <StyledSection id="academic">
       <Contained>
         <Wrapper>
           <Heading
             title="Academic"
-             
-          />     
-           <AboutText><table><tr><StyledHeader>
-           <td>
-             <span style={{margin :"40px"  }}>
-         <StyledLink
-          rel="noreferrer"
-          target="_blank"
-          
-         >
-         <img src={Isamm} alt="" width="95 " height="95" />
-
-        
-         </StyledLink> </span> 
-</td> 
-             
-             <td ><br></br>
-   <CustomSpan> HIGHER INSTITUTE OF ART AND MULTIMEDIA</CustomSpan>   
-   
-  <CustomSpan> </CustomSpan> <br></br> <CustomSpan> </CustomSpan>Bachelor Degree in Computer Science and Multimedia . <CustomSpan1> MENTION OBTAINED : WELL </CustomSpan1> <CustomSpan2> 2016-2019</CustomSpan2></td>
-         
-         </StyledHeader>
-
-         </tr>
-         <tr><StyledHeader>
-           <td  >
-             <span style={{margin :"40px" }}>
-         <StyledLink
-          rel="noreferrer"
-          target="_blank"
-          
-         >
-          <img src= {Enicar} alt="" width="75 " height="35" />
-
-        
-         </StyledLink> </span> 
-</td> 
-             
-             <td ><br></br>
-             <CustomSpan> NATIONAL ENGINEERING SCHOOL OF CARTHAGE</CustomSpan>  
-   
-   <CustomSpan> </CustomSpan> <br></br>   Software Engineering Degree . <CustomSpan1>MENTION OBTAINED : FAIRLY WELL </CustomSpan1> <CustomSpan2> 2019-2022</CustomSpan2></td>
-         
-         
-         </StyledHeader>
-
-         </tr>
-         
-         </table>
-          
-           
-  
-      
+          />
+          <AboutText><table>
+            <tr>
+              <StyledHeader>
+                <td>
+                  <span style={{ margin: "40px" }}>
+                    <StyledLink
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <img src={Enicar} alt="" width="75 " height="35" />
+                    </StyledLink> </span>
+                </td>
+                <td><br></br>
+                  <CustomSpan>NATIONAL ENGINEERING SCHOOL OF CARTHAGE</CustomSpan>
+                  <CustomSpan /><br></br>Software Engineering Degree<CustomSpan1>MENTION OBTAINED : WELL </CustomSpan1> <CustomSpan2> 2019-2022</CustomSpan2></td>
+              </StyledHeader>
+            </tr>
+            <tr>
+              <StyledHeader>
+                <td>
+                  <span style={{ margin: "40px" }}>
+                    <StyledLink
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <img src={Isamm} alt="" width="95 " height="95" />
+                    </StyledLink> </span>
+                </td>
+                <td><br></br>
+                  <CustomSpan>HIGHER INSTITUTE OF ART AND MULTIMEDIA</CustomSpan>
+                  <CustomSpan /><br></br> <CustomSpan> </CustomSpan>Bachelor Degree in Computer Science and Multimedia . <CustomSpan1> MENTION OBTAINED : WELL </CustomSpan1> <CustomSpan2> 2016-2019</CustomSpan2></td>
+              </StyledHeader>
+            </tr>
+          </table>
           </AboutText>
-         
         </Wrapper>
       </Contained>
     </StyledSection>

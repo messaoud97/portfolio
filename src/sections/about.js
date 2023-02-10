@@ -1,18 +1,18 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faFile } from '@fortawesome/free-solid-svg-icons';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { faPaperPlane, faFile } from '@fortawesome/free-solid-svg-icons';
 import Tech from '../components/UI/Tech';
 
-import ScrollLink from '../components/utils/scrollLink';
+//import ScrollLink from '../components/utils/scrollLink';
 import Heading from '../components/UI/heading';
 import {
   Contained,
   StyledSection,
   Wrapper,
 } from '../components/layout/elements';
-import ButtonLink from '../components/UI/buttonLink';
+//import ButtonLink from '../components/UI/buttonLink';
 
 const AboutText = styled.div`
   color: var(--text);
@@ -113,36 +113,36 @@ const Stack = styled.p`
   }
 `;
 
-const StyledIcon = styled(FontAwesomeIcon)`
-  color: inherit;
-  margin-right: 0.5rem;
-`;
+// const StyledIcon = styled(FontAwesomeIcon)`
+//   color: inherit;
+//   margin-right: 0.5rem;
+// `;
 
-const ButtonsWrapper = styled.div`
-  display: flex;
+// const ButtonsWrapper = styled.div`
+//   display: flex;
 
-  & a:first-of-type {
-    margin-right: 3rem;
-  }
+//   & a:first-of-type {
+//     margin-right: 3rem;
+//   }
 
-  @media ${props => props.theme.mediaQueries.medium} {
-    justify-content: space-around;
-    width: 100%;
+//   @media ${props => props.theme.mediaQueries.medium} {
+//     justify-content: space-around;
+//     width: 100%;
 
-    & a:first-of-type {
-      margin-right: 0rem;
-    }
-  }
-`;
+//     & a:first-of-type {
+//       margin-right: 0rem;
+//     }
+//   }
+// `;
 
 // Takes custom components from markdown, and maps to my custom components
-const renderCustom = new rehypeReact({
-  createElement: React.createElement,
-  components: { 'scroll-link': ScrollLink, span: CustomSpan },
-}).Compiler;
+// const renderCustom = new rehypeReact({
+//   createElement: React.createElement,
+//   components: { 'scroll-link': ScrollLink, span: CustomSpan },
+// }).Compiler;
 
 const About = () => {
-  
+
   return (
     <StyledSection id="about-me">
       <Contained>
@@ -150,18 +150,17 @@ const About = () => {
           <Heading
             title="About me"
             subtitle="If you’re <span>wondering</span> who <span>I am</span>…"
-          />           
+          />
           <AboutText>
-          I’m <CustomSpan>Ahmed Messaoud , </CustomSpan>  a 24 years old passionate <CustomSpan>Full-Stack Developer , from Tunisia .  </CustomSpan>
-            Also a <CustomSpan>software engineering</CustomSpan> student who spends most of his time developing new scalable and performant platforms and who 
-            has a broad skill set ranging from full-stack development and cloud computing to blockchain technologies like <CustomSpan>Ethereum</CustomSpan> .
+            I’m <CustomSpan>Ahmed Messaoud, </CustomSpan>a 26 years old passionate <CustomSpan>Software Engineer</CustomSpan>, from Tunisia.
+            who spends most of his time developing new scalable and performant platforms and who has a broad skill set ranging from cloud computing to blockchain technologies (Hyperledger, Quorum, Ethereum)..
             <StackTitle>
               My current <CustomSpan>stack</CustomSpan> of{' '}
-              <CustomSpan>languages/technologies</CustomSpan> is:
+              <CustomSpan>languages/technologies</CustomSpan> is :
             </StackTitle>
-            <Stack><Tech/> </Stack>
+            <Stack><Tech/></Stack>
           </AboutText>
-         
+
         </Wrapper>
       </Contained>
     </StyledSection>

@@ -8,17 +8,17 @@ import Home from './sections/home';
 import About from './sections/about';
 import Portfolio from './sections/portfolio';
 import Contact from './sections/contact';
-import Acad from './sections/academic';
-import Exp from './sections/experience';
+import Academic from './sections/academic';
+import Experience from './sections/experience';
 
 ReactDOM.render(
   <Layout>
-  <Home />
-  <About />
-  <Acad></Acad>
-  <Exp></Exp>
-  <Portfolio />
-  <Contact />
+  <Home/>
+  <About/>
+  <Academic/>
+  <Experience/>
+  <Portfolio/>
+  <Contact/>
 </Layout>,
   document.querySelector('#root')
 );

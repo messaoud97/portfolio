@@ -20,7 +20,7 @@ const StyledNav = styled.nav`
 `;
 
 const NavItems = ({ mobile, clicked }) => {
-  // Animation
+  //Animation
   const navItemsTrail = useTrail(LINKS.length, {
     config: config.wobbly,
     delay: 300,

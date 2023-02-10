@@ -1,11 +1,11 @@
 import React from "react";
-import rehypeReact from "rehype-react";
+//import rehypeReact from "rehype-react";
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { animated, useSpring, config } from "react-spring";
 import K2lis from "../static/k2lis.png";
 import tt from "../static/telecom.png";
-import ScrollLink from "../components/utils/scrollLink";
+//import ScrollLink from "../components/utils/scrollLink";
 import Heading from "../components/UI/heading";
 import Laevitas from "../static/laevitas.png"
 import bootfinance from "../static/boot.png"
@@ -147,69 +147,69 @@ const CustomSpan1 = styled.span`
   }
 `;
 
-const StackTitle = styled.h2`
-  font-weight: 600;
-  color: var(--text-highlight);
-  margin-top: 5rem;
-  font-size: 2rem;
-  transition: color 0.2s ease-out;
+// const StackTitle = styled.h2`
+//   font-weight: 600;
+//   color: var(--text-highlight);
+//   margin-top: 5rem;
+//   font-size: 2rem;
+//   transition: color 0.2s ease-out;
 
-  @media ${(props) => props.theme.mediaQueries.small} {
-    font-size: 1.9rem;
-  }
+//   @media ${(props) => props.theme.mediaQueries.small} {
+//     font-size: 1.9rem;
+//   }
 
-  @media ${(props) => props.theme.mediaQueries.smallest} {
-    font-size: 1.8rem;
-  }
-`;
+//   @media ${(props) => props.theme.mediaQueries.smallest} {
+//     font-size: 1.8rem;
+//   }
+// `;
 
-const Stack = styled.p`
-  color: var(--primary);
-  width: 75%;
-  margin: 0 auto;
-  text-transform: uppercase;
-  margin-bottom: 5rem;
-  font-size: 1.4rem;
-  line-height: 1.8;
-  font-weight: 700;
+// const Stack = styled.p`
+//   color: var(--primary);
+//   width: 75%;
+//   margin: 0 auto;
+//   text-transform: uppercase;
+//   margin-bottom: 5rem;
+//   font-size: 1.4rem;
+//   line-height: 1.8;
+//   font-weight: 700;
 
-  @media ${(props) => props.theme.mediaQueries.small} {
-    width: 90%;
-    font-size: 1.3rem;
-  }
+//   @media ${(props) => props.theme.mediaQueries.small} {
+//     width: 90%;
+//     font-size: 1.3rem;
+//   }
 
-  @media ${(props) => props.theme.mediaQueries.smallest} {
-    font-size: 1.2rem;
-  }
-`;
+//   @media ${(props) => props.theme.mediaQueries.smallest} {
+//     font-size: 1.2rem;
+//   }
+// `;
 
-const StyledIcon = styled(FontAwesomeIcon)`
-  color: inherit;
-  margin-right: 0.5rem;
-`;
+// const StyledIcon = styled(FontAwesomeIcon)`
+//   color: inherit;
+//   margin-right: 0.5rem;
+// `;
 
-const ButtonsWrapper = styled.div`
-  display: flex;
+// const ButtonsWrapper = styled.div`
+//   display: flex;
 
-  & a:first-of-type {
-    margin-right: 3rem;
-  }
+//   & a:first-of-type {
+//     margin-right: 3rem;
+//   }
 
-  @media ${(props) => props.theme.mediaQueries.medium} {
-    justify-content: space-around;
-    width: 100%;
+//   @media ${(props) => props.theme.mediaQueries.medium} {
+//     justify-content: space-around;
+//     width: 100%;
 
-    & a:first-of-type {
-      margin-right: 0rem;
-    }
-  }
-`;
+//     & a:first-of-type {
+//       margin-right: 0rem;
+//     }
+//   }
+// `;
 
 // Takes custom components from markdown, and maps to my custom components
-const renderCustom = new rehypeReact({
-  createElement: React.createElement,
-  components: { "scroll-link": ScrollLink, span: CustomSpan },
-}).Compiler;
+// const renderCustom = new rehypeReact({
+//   createElement: React.createElement,
+//   components: { "scroll-link": ScrollLink, span: CustomSpan },
+// }).Compiler;
 
 const Exp = () => {
   return (
@@ -219,8 +219,8 @@ const Exp = () => {
           <Heading title="Exprerience" />
           <AboutText>
             <table>
-            <tr>
-              <StyledHeader>
+              <tr>
+                <StyledHeader>
                   <td>
                     <span style={{ margin: "40px" }}>
                       <StyledLink rel="noreferrer" target="_blank">
@@ -228,19 +228,18 @@ const Exp = () => {
                       </StyledLink>{" "}
                     </span>
                   </td>
-
                   <td>
                     <br></br>
-                    <CustomSpan> BOOTFINANCE</CustomSpan>{" "}
-                     <CustomSpan> </CustomSpan> <br></br>{" "}
-                    <CustomSpan> MISSION</CustomSpan> : FULLSTACK ENGINEER ( LIQUIDITY POOL implementation {"&"} integration )
+                    <CustomSpan>BOOTFINANCE</CustomSpan>{" "}
+                    <CustomSpan/><br></br>{" "}
+                    <CustomSpan>MISSION</CustomSpan> : FULLSTACK Developer (LIQUIDITY POOL integration / NFT airdrops )
                     <br></br>
-                    <CustomSpan> FEBRURY 2021</CustomSpan>
+                    <CustomSpan>FEBRURY-DECEMBER 2021 </CustomSpan>
                   </td>
                 </StyledHeader>
               </tr>
-            <tr>
-              <StyledHeader>
+              <tr>
+                <StyledHeader>
                   <td>
                     <span style={{ margin: "40px" }}>
                       <StyledLink rel="noreferrer" target="_blank">
@@ -248,15 +247,14 @@ const Exp = () => {
                       </StyledLink>{" "}
                     </span>
                   </td>
-
                   <td>
                     <br></br>
-                    <CustomSpan> LAEVITAS</CustomSpan>{" "}
+                    <CustomSpan>LAEVITAS</CustomSpan>{" "}
                     <CustomSpan1>(INTERNSHIP)</CustomSpan1>
                     <CustomSpan> </CustomSpan> <br></br>{" "}
-                    <CustomSpan> MISSION</CustomSpan> : Extracting option assets data from blockchain using generated subgraphs
+                    <CustomSpan>MISSION</CustomSpan> : Extracting option assets data from blockchain using generated subgraphs
                     <br></br>
-                    <CustomSpan> APRIL-MAY 2021</CustomSpan>
+                    <CustomSpan>APRIL-MAY 2021</CustomSpan>
                   </td>
                 </StyledHeader>
               </tr>
@@ -291,20 +289,19 @@ const Exp = () => {
                       </StyledLink>{" "}
                     </span>
                   </td>
-
                   <td>
                     <br></br>
-                    <CustomSpan> TUNISIE TELECOM</CustomSpan>{" "}
+                    <CustomSpan>TUNISIE TELECOM</CustomSpan>{" "}
                     <CustomSpan1>(INTERNSHIP)</CustomSpan1>
                     <CustomSpan> </CustomSpan> <br></br>{" "}
-                    <CustomSpan> MISSION</CustomSpan> : Mobile cross platform
+                    <CustomSpan>MISSION</CustomSpan> : Mobile cross platform
                     application development using REACT NATIVE
                     <br></br>
-                    <CustomSpan> JULLY-AUGUST 2018</CustomSpan>
+                    <CustomSpan>JULLY-AUGUST 2018</CustomSpan>
                   </td>
                 </StyledHeader>
               </tr>
-             
+
             </table>
           </AboutText>
         </Wrapper>

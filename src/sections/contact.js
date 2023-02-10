@@ -33,7 +33,6 @@ const Contact = () => {
             "
           />
           <Social />
-          
           <CopyRight>Copyright © {new Date().getFullYear()}, Ahmed Messaoud</CopyRight>
         </Wrapper>
       </Contained>

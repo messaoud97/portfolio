@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
- 
+
 import Heading from '../components/UI/heading';
 import {
   Contained,
   StyledSection,
   Wrapper,
 } from '../components/layout/elements';
-import PortfolioItem from '../templates/portfolioItem';
+//import PortfolioItem from '../templates/portfolioItem';
 
 const PortfolioWrapper = styled.div`
   width: 100%;
@@ -18,7 +18,7 @@ const PortfolioWrapper = styled.div`
 `;
 
 const Portfolio = () => {
-  
+
   return (
     <StyledSection id="portfolio">
       <Contained>
@@ -26,11 +26,8 @@ const Portfolio = () => {
           <Heading
             title="Portfolio (SOON !!!)"
             subtitle={`Check <span>what</span> I've been doing <span>lately</span>`}
-               
-          />    
-          <PortfolioWrapper>
-             
-          </PortfolioWrapper>
+          />
+          <PortfolioWrapper />
         </Wrapper>
       </Contained>
     </StyledSection>

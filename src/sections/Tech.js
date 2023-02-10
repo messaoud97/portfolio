@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
- import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faNodeJs,
   faGit,
   faEthereum,
-  faTerminal,  faAws,
+  faTerminal, faAws,
   faDocker,
 } from '@fortawesome/free-brands-svg-icons';
 
@@ -107,26 +107,26 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `;
 
 const Tech = () => {
- 
+
 
   return (
     <>
       <Email  >
-         
+
       </Email>
       <SocialWrapper>
         <StyledLink
           rel="noreferrer"
           target="_blank"
           aria-label="Github"
-         >
+        >
           <StyledIcon icon={faTerminal} />
         </StyledLink>
         <StyledLink
           rel="noreferrer"
           target="_blank"
           aria-label="Linkedin"
-           
+
         >
           <StyledIcon icon={faAws} />
         </StyledLink>
@@ -134,30 +134,28 @@ const Tech = () => {
           rel="noreferrer"
           target="_blank"
           aria-label="Youtube"
-         >
-       
-        
+        >
           <StyledIcon icon={faEthereum} />
         </StyledLink>
         <StyledLink
           rel="noreferrer"
           target="_blank"
           aria-label="Facebook"
-         >
+        >
           <StyledIcon icon={faDocker} />
         </StyledLink>
         <StyledLink
           rel="git"
           target="git"
           aria-label="git"
-         >
+        >
           <StyledIcon icon={faGit} />
         </StyledLink>
         <StyledLink
           rel="noreferrer"
           target="_blank"
           aria-label="Facebook"
-         >
+        >
           <StyledIcon icon={faNodeJs} />
         </StyledLink>
       </SocialWrapper>
